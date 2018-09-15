@@ -21,17 +21,17 @@
     <form class="form-signin">
       <div class="text-center mb-4">
         <!--<img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">-->
-        <h1 class="h3 mb-3 font-weight-normal">Floating labels</h1>
-        <p>Build form controls with floating labels via the <code>:placeholder-shown</code> pseudo-element. <a href="https://caniuse.com/#feat=css-placeholder-shown">Works in latest Chrome, Safari, and Firefox.</a></p>
+        <h1 class="h3 mb-3 font-weight-normal">You Blog</h1>
+        <p>Ingresa tus datos para entrar a la red privada de... <a href="https://caniuse.com/#feat=css-placeholder-shown">Works in latest Chrome, Safari, and Firefox.</a></p>
       </div>
 
       <div class="form-label-group">
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <input type="email" id="inputEmail" class="form-control form-control-lg" placeholder="Email address" required autofocus>
         <label for="inputEmail">Email address</label>
       </div>
 
       <div class="form-label-group">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input type="password" id="inputPassword" class="form-control form-control-lg" placeholder="Password" required>
         <label for="inputPassword">Password</label>
       </div>
 
