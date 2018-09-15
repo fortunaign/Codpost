@@ -4,8 +4,12 @@ class Home extends CI_Controller
 {
     public function index()
     {
-        //print("Hola Mundo");
-        $data = array('barra' => 'Blog | Inicio', 'title' => 'Negocio', 'subtitle' => 'Blog de facturacion', 'pro_table' => 'Productos');
-        $this->load->view("home", $data);
+        $this->load->view('invitado/nav');
+        
+        $resultado = $this->post->getPost();
+        $data = array('consulta' => $resultado);
+        $this->load->view('invitado/body', $data);
+
+        $this->load->view('invitado/footer');
     }
 }

@@ -20,7 +20,7 @@
   <body>
     <form class="form-signin">
       <div class="text-center mb-4">
-        <!--<img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">-->
+        <img class="mb-4" src="<?= base_url() ?>plantillas/img/fuckyou.jpg" alt="" width="95" height="95">
         <h1 class="h3 mb-3 font-weight-normal">You Blog</h1>
         <p>Ingresa tus datos para entrar a la red privada de... <a href="https://caniuse.com/#feat=css-placeholder-shown">Works in latest Chrome, Safari, and Firefox.</a></p>
       </div>
