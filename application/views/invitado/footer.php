@@ -1,6 +1,6 @@
 
 <footer class="footer">
-    <div class="container">
+    <div class="container-fluid">
     <span class="text-muted">2018 - 2019 &copy; Ignacio Fortuna</span>
     </div>
 </footer>

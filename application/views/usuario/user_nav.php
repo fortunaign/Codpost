@@ -16,7 +16,6 @@
     <!-- Custom styles for this template -->
     <link href="<?= base_url()?>plantillas/css/sticky-footer-navbar.css" rel="stylesheet">
     <link href="<?= base_url()?>plantillas/css/open-iconic-foundation.css" rel="stylesheet">
-    
   </head>
 
   <body class="bg-secondary">
@@ -29,18 +28,32 @@
             </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="<?= base_url() ?>home/pro">Inicio<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= base_url() ?>home/perfil"><?= $this->session->userdata('user')?></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Post <span class="badge badge-secondary"> 5 </span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Crear Post</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Documentos <span class="badge badge-secondary"> 8 </span></a>
                 </li>
             </ul>
             <?php 
                 if($this->session->userdata('log'))
                 {
             ?>
-                <div class="btn-group btn-group-sm">
-                    <a href="<?= base_url()?>home/perfil" class="btn btn-success">Perfil</a>
-                    <a href="<?= base_url()?>login/logOut" class="btn btn-danger">Cerrar Sesion</a>
-                </div>
+                <ul class="nav justify-content-end">
+                    <!--
+                    <li class="nav-item">
+                        <a class="nav-link" href="home/perfil">Perfil</a>
+                    </li>-->
+                    <li class="nav-item">
+                        <a class="btn btn-outline-danger btn-sm" href="<?= base_url()?>login/logOut">Cerrar Sesion</a>
+                    </li>
+                </ul>
             <?php
                 }else{
             ?>
@@ -54,4 +67,3 @@
         </div>
     </nav>
 </header>
-

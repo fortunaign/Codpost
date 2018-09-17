@@ -15,7 +15,7 @@
             </div>
             <!-- Detalles de Post  -->
             <div class="col-lg-8 p-4">
-                <a href="<?= base_url() ?>readpost/read/<?= $fila->id ?>"><h3><?= $fila->titulo ?></h3></a> 
+                <a href="<?= base_url() ?>home/read/<?= $fila->id ?>"><h3><?= $fila->titulo ?></h3></a> 
                 <p>
                 <?= $fila->descripcion ?>
                 </p>
